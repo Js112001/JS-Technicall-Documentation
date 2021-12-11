@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'c1 c2';
+    grid-template-columns: autofit, minmax(1fr, 3fr);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#container1{
+    grid-area: c1;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    /* scroll-behavior: smooth; */
+}
+
+#container2{
+    grid-area: c2;
+    /* padding: 20px; */
+    padding-left: 350px;
+    padding-right: 50px;
+    scroll-behavior: smooth;
+}
+
+#menu-head{
+   position: sticky;
+   top: 0;
+   background-color: rgb(219, 216, 216);
+   padding: 10px;
+   text-align: center;
+}
+
+.h-menu{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+    margin: 5px;
+}
+
+p{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+ul{
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.program{
+    background-color: rgb(231, 225, 225);
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+.heading{
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+}
